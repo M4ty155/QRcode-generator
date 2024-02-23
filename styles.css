@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    color: #F2F5F9;
+    font-size: large;
+    background-color: #111729;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 100%;
+}
+html{
+    height: 100%;
+}
+.background{
+    position: absolute;
+    margin-left: 600px;
+    z-index: -1;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 225px;
+    gap: 30px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #030617;
+    border-color: #3662E3;
+    width: 625px;
+    height: 65px;
+    border-style: solid;
+    border-radius: 20px;
+}
+#submitURL{
+    font-family: 'Outfit';
+    font-size: large;
+    margin-left: 10px;
+    border: none;
+    background: none;
+    width: 510px;
+    height: 50px;
+    outline: none;
+    color: #F2F5F9;
+}
+.btn{
+    font-family: 'Outfit';
+    font-size: large;
+    background-color: #3662E3;
+    height: 45px;
+    border-radius: 15px;
+    border-style: hidden;
+    color: #F2F5F9;
+}
+.btn:hover{
+    background-color: #0631b1;
+}
+.QR{
+    align-items: center;
+    justify-content: center;
+    margin-top: 70%;
+    border-style: solid;
+    border-width: 30px;
+    border-radius: 20px;
+}
+.QRbox{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.circle{
+    position: absolute;
+    z-index: -1;
+    background-color: #4e80ee33;
+    width: 400px;
+    height: 400px;
+    margin-top: 95px;
+    border-radius: 200px;
+}
+#warnings{
+    display: flex;
+    margin-top: 5px;
+}
+.icons{
+    display: flex;
+    width: 25px;
+    height: 25px;
+}
+.btnsQR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit';
+    font-size: large;
+    background-color: #3662E3;
+    height: 45px;
+    width: 150px;
+    border-radius: 15px;
+    border-style: hidden;
+    color: #F2F5F9;
+}
+#download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.btnsQR:hover{
+    background-color: #0631b1;
+}
+#share{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="assets\bg-illustration.svg" alt="backgroundLogo" class="background">
+    <div class="box" id="box">
+        <img src="assets\logo-qr-generator.svg" alt="generatorLogo" class="title">
+        <form action="" method="POST" id="URL">
+            <div class="form">
+                <input type="text" id="submitURL" autocomplete="off" placeholder="Enter URL here" style="padding-left: 10px;">
+                <button type="submit" class="btn">QR code</button>
+            </div>
+            <div id="warnings"></div>
+        </form>
+    </div>
+    <div id="QRbox" class="QRbox">
+        <div class="circle"></div>
+        <div class="QR" id="QRcode"></div>
+        <div class="btns">
+            <a id="download" download="miQR" style="text-decoration: none;">
+                <button class="btnsQR">
+                    Download <img src="assets\UimDownloadAlt.svg" alt="downloadIcon" class="icons">
+                </button>
+            </a>
+            <a href="javascript:getlink();" style="text-decoration: none;">
+                <button id="share" class="btnsQR">Share<img src="assets\MdiLinkVariant.svg" alt="shareIcon" class="icons"></button>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.js" integrity="sha512-B+gr+zLWg81qxVwvtYwKrmjvQtZKD/GGFF7jD80OfzbqFw+NsbS5faEqpCO7Q7oRw1bYi0+WLJf54j8Vm7NADw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="functions.js"></script>
+</html>
